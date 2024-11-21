@@ -38,7 +38,7 @@ body {
     background-color: rgb(40, 40, 40);
     box-shadow: 0 0 4px rgb(0, 0, 0);
     display: grid;
-    grid-template-columns: 1fr 250px;
+    grid-template-columns: 1fr 400px;
 }
 
 .leftSide {
@@ -111,8 +111,13 @@ input {
     align-items: center;
     padding: 10px 5px;
     margin-bottom: 5px;
-    background-color: rgba(100, 100, 100, 0.3)
+    background-color: rgba(100, 100, 100, 0.3);
 }
+
+.historyContainer div label{
+    max-width: 300px;
+}
+
 
 .historyContainer div:last-child {
     border-bottom: none;

@@ -57,7 +57,9 @@ function refreshHistory() {
     let history = JSON.parse(localStorage.getItem(STORAGE_NAME)) || [];
     history.forEach((entry, index) => {
         const div = document.createElement('div');
-        div.textContent = entry;
+        const label = document.createElement('label');
+        label.textContent = entry;
+        div.appendChild(label);
         const deleteBtn = document.createElement('button');
         deleteBtn.textContent = 'Delete';
         deleteBtn.addEventListener('click', () => {
