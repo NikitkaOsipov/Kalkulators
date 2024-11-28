@@ -18,6 +18,19 @@ document.querySelectorAll('.buttons button').forEach(button => {
     });
 });
 
+document.addEventListener('keydown', (event) => {
+    const key = event.key;
+    if (key === 'Enter') {
+        calculate();
+    } else if (key === 'Escape') {
+        clearInput();
+    } else if (key === 'Backspace') {
+        deleteLastSymbol();
+    } else if (/^[0-9+\-*/.]$/.test(key)) {
+        inputEl.value += key;
+    }
+});
+
 document.getElementById('clearHistory').addEventListener('click', () => {
     localStorage.removeItem(STORAGE_NAME);
     refreshHistory();

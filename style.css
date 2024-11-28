@@ -63,9 +63,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (max-width: 700px) {
-    .rightSide {
-        display: none;
-    }
     .container {
         grid-template-columns: 1fr;
     }
@@ -100,8 +97,20 @@ input {
     background-color: rgb(81, 81, 164)
 }
 
+.blueButton:hover {
+    background-color: rgba(81, 81, 164, 0.6)
+}
+
 .greyButton {
     background-color: rgba(100, 100, 100, 0.2)
+}
+
+.greyButton:hover {
+    background-color: rgba(100, 100, 100, 0.4)
+}
+
+.signButton:hover {
+    background-color: rgb(54, 54, 54, 0.4)
 }
 
 .historyContainer div {
